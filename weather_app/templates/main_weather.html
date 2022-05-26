@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href={{ b }} class="icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> -->
+    <style>
+
+    </style>
+    <link rel="stylesheet" href="{{url_for('static',filename='main_weather.css')}}">
+    <link rel="stylesheet" href="/../static/main_weather.css">
+</head>
+
+<body>
+    <H2 class="name">Weather Report</H2>
+    <!-- <img src={{ b }} class=ico> -->
+    <div class="card-back-image">
+        <div class="card">
+            <div class="left">
+                <h2 class="city">{{ h }}</h2>
+                <h1 class="temp">{{ c }}°</h1>
+            </div>
+            <div class="right">
+
+                <h3 class="des"> {{ a }} </h3>
+                <br>
+                <br>
+                <h3 class="des">HUMIDITY : {{ d }}</h3>
+                <h3 class="des">CLOUD-LEVEL : {{ e }}</h3>
+                <h3 class="des">TIME-TAKEN : {{ f }}</h3>
+                <h3 class="des">{% if g==1 %}
+                    DAY
+                    {% else %}
+                    NIGHT
+                    {% endif %}
+                </h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

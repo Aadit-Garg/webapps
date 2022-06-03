@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWSROOM.inc</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}">
+    <link rel="stylesheet" href="/../news_app/static/main.css">
+</head>
+
+<body>
+    <h1 class="title">NEWSROOM.inc</h1>
+    <div class="body">
+        {%for b in range(0, tot)%}
+        <a href="{{ l[b] }}" target="_blank">
+
+            <div src="">
+                <h1> {{ t[b] }}</h1>
+                <li>{{n[b]}}</li>
+                <h3> {{ d[b] }} </h3>
+                <!-- <p>  </p> -->
+
+                <p>{{ a[b] }}</p>
+                {% if i[b] %}
+                {% if "youtube" in i[b] %}
+                {{ i[b] }}
+                {% else %}
+                <img src="{{ i[b] }}" width="97%">
+                {% endif %}
+                {% else %}
+                <img width="97%" src="https://www.freeiconspng.com/uploads/no-image-icon-6.png"
+                    alt="Image not Provided">
+                {% endif %}
+            </div>
+        </a>
+        {%endfor%}
+    </div>
+    <p class="none">
+        News Provided By:{%for i in range(0,tot)%}
+        {{ n[i] }},
+        {%endfor%}
+    </p>
+    <h2 class="end">NEWSROOM.inc All Rights Reserved</h2>
+
+</body>
+
+
+</html>

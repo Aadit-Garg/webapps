@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+
+body{
+    margin: 0%;
+    font-family: 'Josefin Sans','Abril Fatface',sans-serif,Helvetica, sans-serif;
+
+}
+.title,.end{
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 0%;
+    font-family: 'Rozha One';
+    background-color: #eeb34b;
+    height: 60px;
+    text-align:center;
+    padding-top: 20px;
+}
+.body{
+    margin: 1%;
+    border-radius: 5px;
+    display:grid;
+    /* flex: 1; */
+    grid-template-columns: 1fr 1fr;
+    /* flex-direction:inherit; */
+}
+div{
+    border: solid 2px black;
+    border-radius: 10px;
+    
+    padding: 2%;
+    /* padding-bottom:unset; */
+
+    /* width:48%; */
+    height:95%;
+
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    /* width:48%; */
+    margin: 10px;
+
+}
+a:hover{
+    color: rgba(0,0,0,0.7);
+    text-decoration: underline;
+}
+img{
+    border-radius: 10px;
+}
+
+li,p{
+    color: black;
+    font-size: larger;
+    font-size: 25px;
+}
+.none{
+    width:auto;
+    margin: 10px;
+}
+.end{
+    color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.3);
+    height: 60px;
+    padding-top: 2%;
+    font-family: 'Josefin Sans';
+    margin-bottom: 0%;
+
+}
+@media (prefers-color-scheme: dark) {
+   *,p,li,div,.body{
+    background-color: #000;
+    color: #fff;
+}
+    div,.body{
+        border:#fff solid;
+    }
+    .end{
+        color: rgba(255,255,255,0.7);
+    background-color: rgba(255,255,255,0.3);
+    }
+    a:hover{
+        color: rgba(255,255,255,0.7);
+        text-decoration: underline;       
+    }
+    .aa{
+        background-color: aliceblue;
+    }
+}

@@ -3,7 +3,7 @@ import json
 from datetime import datetime
 
 #import pprint
-api = "35db605498234c0ab8c132546220805"
+api = "YOUR_API_HERE"
 ip = get('https://api.ipify.org').text
 print(f"got IP[{ip}]")
 

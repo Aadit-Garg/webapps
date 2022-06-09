@@ -1,7 +1,7 @@
 from requests import get
 import json
 import pprint
-api = "0b6e4a517fe64eedab341cb7887c0f6c"
+api = "YOUR_API_HERE"
 news= get(f"https://newsapi.org/v2/top-headlines?country=in&apiKey={api}")
 print(news)
 news = json.loads(news.content)
